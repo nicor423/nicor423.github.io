@@ -1,0 +1,125 @@
+/*menu*/
+.navbar{
+	/*background-image: url("../img/background_nav.jpg");*/
+	font-weight: bold;
+	background-color: transparent;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.navbar-brand{
+	font-size: 20pt;
+	font-family: Comic sans ms;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.nav-item{
+	margin-right: 25px;
+	color: white;
+}
+.navbar-dark .navbar-nav .nav-link{
+	font-family: comic sans ms;
+	color:white;
+	text-decoration: none;
+	vertical-align: center;
+	display: inline-block;
+	font-size: 15pt;
+}
+.nav-item.active{
+	border-bottom: 2px solid white;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+		border-bottom: 2px solid white;
+}
+/*menu*/
+
+/*secciones*/
+	section{
+		height: 100vh;
+		width: 100%;
+	}
+	/*seccion principal*/
+			.contenedor{
+				position: static;
+				background-image: url(../img/background_page.jpg);
+				height: 100vh;
+				padding-top: 300px;
+			}
+			#contenedor_nombre{
+				text-align: center;
+				margin: 0 auto;
+				background-color: rgba(67, 222, 201, .2);
+				border-radius: 60px;
+				height: 300px;
+				width: 50%;
+				margin-left: 200px;
+			}
+			.nombre{
+				padding-top: 50px;
+				color: white;
+				margin: 0 auto;
+				text-align: center;
+			}
+			hr{
+				width: 50%;
+			}
+			.view_more{
+				border-radius: 20px;
+				margin-top: 60px;
+			}
+			@media handheld, only screen and (max-width: 767px) {
+				#contenedor_nombre{
+					margin: 0 auto;
+					width: 80%;
+					height: 60%
+					background-color: rgba(67, 222, 201, 1);
+
+				}
+				.view_more{
+					display: none;
+				}
+			}
+			#hi{
+				height: 350px;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+			/*ocultar hi en pantallas pequeñas*/
+			@media handheld, only screen and (max-width: 767px) {
+				#hi{
+					display:none;
+				}
+			}
+			@media only screen and (max-width: 1023px) {
+				#hi{
+					display:none;
+				}
+			}
+	/*seccion principal*/
+
+	/*seccion about*/
+		#two{
+			position: absolute;
+			background-image: url("../img/background_nav.jpg");
+			font-family: comic sans ms;
+		}
+		#pointing{
+			position: relative;
+			float: left;
+			padding-top: 50%;
+			margin-left: 0px;
+			padding-left: 0px;
+		}
+		#paper{
+			float: right;
+			position: static;
+			height: 80%
+			padding-top: 0%;
+			margin-top: 4.2%;
+			margin-right: 25%;
+		}
+	/*seccion about*/
+
+/*secciones*/
+
+

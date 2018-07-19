@@ -84,17 +84,21 @@
 				bottom: 0;
 				right: 0;
 			}
-			/*ocultar hi en pantallas pequeñas*/
-			@media handheld, only screen and (max-width: 767px) {
+			/*ocultar en pantallas pequeñas*/
+			@media handheld, only screen and (max-width: 970px) {
 				#hi{
 					display:none;
 				}
-			}
-			@media only screen and (max-width: 1023px) {
-				#hi{
-					display:none;
+				#pointing{
+					display: none;
+				}
+				#paper{
+					padding: 0px;
+					height: 80%;
+					margin-left: 5%;
 				}
 			}
+
 	/*seccion principal*/
 
 	/*seccion about*/
@@ -104,19 +108,16 @@
 			font-family: comic sans ms;
 		}
 		#pointing{
-			position: relative;
-			float: left;
-			padding-top: 50%;
-			margin-left: 0px;
-			padding-left: 0px;
+			height: 450px;
+			padding-top: 0px;
+			margin-top: 40%;
 		}
 		#paper{
-			float: right;
-			position: static;
 			height: 80%
-			padding-top: 0%;
-			margin-top: 4.2%;
-			margin-right: 25%;
+			padding-top: 0px;
+			margin-top: 5%;
+
+
 		}
 	/*seccion about*/
 

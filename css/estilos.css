@@ -107,6 +107,12 @@
 				#three{
 					height: 185vh;
 				}
+				.navbar{
+					background-image: url("../img/background_nav.jpg");
+				}
+				li.nav-item{
+					text-align: center;
+				}
 			}
 
 	/*seccion principal*/

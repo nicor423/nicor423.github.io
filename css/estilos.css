@@ -84,7 +84,7 @@
 				bottom: 0;
 				right: 0;
 			}
-			/*ocultar en pantallas pequeñas*/
+			/*en pantallas pequeñas*/
 			@media handheld, only screen and (max-width: 970px) {
 				#hi{
 					display:none;
@@ -93,7 +93,16 @@
 					display: none;
 				}
 				#paper{
-					margin: 0 auto;
+					align-content: center;
+				  	width: 95%;
+				  	padding-top: 50%;
+				}
+				#what{
+					padding-top: 200px;/*con 200px queda justo abajo del menu*/
+				}
+				#pencil{
+					margin-left: 30%;
+					padding:0%;
 				}
 			}
 
@@ -114,13 +123,50 @@
 			height: 80%
 			padding-top: 0px;
 			margin-top: 5%;
-
-
 		}
 	/*seccion about*/
 	#three{
-		background-color: purple;
+		background-image: url(../img/background_nav.jpg) ;
+		/*-webkit-transform: scaleY(-1);*/
 	}
+	#what{
+		color: white;
+		text-align: center;
+		font-family: comic sans ms;
+		padding-top: 75px;
+		padding-bottom: 60px;
+		text-decoration: underline;
+	}
+
+	@media handheld, only screen and (min-width: 970px) {
+		#row1{
+			margin-left: 300px;
+			padding-right: 0px;
+
+		}
+		#row2{
+			margin-right: 300px;
+			padding-left: 0px;
+
+		}
+	}
+
+	#row1{
+		padding-bottom: 0px;
+		/*background-color: red;*/
+		margin-bottom: 20px;
+		text-align: left;
+		color: white;
+		font-family: comic sans ms;
+	}
+	#row2{
+		/*background-color: pink;*/
+		padding-top: 0px;
+		padding-bottom: 0px;
+		color: white;
+		font-family: comic sans ms;
+	}
+
 
 /*secciones*/
 

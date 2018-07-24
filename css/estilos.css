@@ -104,6 +104,9 @@
 					margin-left: 30%;
 					padding:0%;
 				}
+				#three{
+					height: 185vh;
+				}
 			}
 
 	/*seccion principal*/
@@ -128,7 +131,6 @@
 	#three{
 		background-image: url(../img/background_nav.jpg) ;
 		/*-webkit-transform: scaleY(-1);*/
-		height: 170vh;
 	}
 	#what{
 		color: white;

@@ -134,9 +134,13 @@
 			margin-top: 5%;
 		}
 	/*seccion about*/
+
 	#three{
 		background-image: url(../img/background_nav.jpg) ;
-		/*-webkit-transform: scaleY(-1);*/
+		-webkit-transform: scaleY(-1);
+	}
+	#sec_three{
+		-webkit-transform: scaleY(-1);
 	}
 	#what{
 		color: white;
@@ -175,7 +179,9 @@
 		color: white;
 		font-family: comic sans ms;
 	}
-
+	.vcenter{
+		padding-top: 13%;
+	}
 
 /*secciones*/
 

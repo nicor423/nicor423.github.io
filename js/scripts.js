@@ -1,13 +1,79 @@
 $(document).ready(function() {
 
-    // setTimeout(function() {
 		var element = document.getElementById("hi");
 	    element.classList.add("animated");
 	    element.classList.add("bounceIn");
 
-    // }, 1000);
+    var element = document.getElementById("chat");
+    element.classList.add("animated");
+    element.classList.add("bounce");
+    element.classList.add("infinite");
 
 
+	    $("#sendmessage").hide();
+	    $("#errormessage").hide();
+
+
+	   	//smooth scroll
+
+		// Select all links with hashes
+		$('a[href*="#"]')
+  		// Remove links that don't actually link to anything
+  		.not('[href="#"]')
+  		.not('[href="#0"]')
+  		.click(function(event) {
+    	// On-page links
+    	if (
+    			location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+    			&&
+    			location.hostname == this.hostname
+			) {
+      // Figure out element to scroll to
+  		var target = $(this.hash);
+  		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      	// Does a scroll target exist?
+      	if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+        	scrollTop: target.offset().top
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+          	return false;
+          } else {
+            // $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+        };
+    });
+    }
+  }
+
+});
+
+  // flip image when hover
+  $("#img_1").hover(function() {
+    /* Stuff to do when the mouse enters the element */
+    $(this).css('z-index', '15');
+    $("#img_2").css('z-index', '5');
+  }, function() {
+    /* Stuff to do when the mouse leaves the element */
+    $(this).css('z-index', '5');
+  });
+
+
+    $("#img_2").hover(function() {
+    /* Stuff to do when the mouse enters the element */
+    $(this).css('z-index', '15');
+    $("#img_1").css('z-index', '5');
+  }, function() {
+    /* Stuff to do when the mouse leaves the element */
+    $(this).css('z-index', '5');
+  });
+  // ---------------------------------
 
 });
 
@@ -15,16 +81,18 @@ $("#view_more").click(function(event) {
 	alert("hola");
 });
 
-// $("#view_more").hover(function(){
-// 	var element = document.getElementById("view_more");
-//     element.classList.add("zoom");
-// });
-// $(window).load(function() {
-//   // executes when complete page is fully loaded, including all frames, objects and images
-//   console.log("window is loaded");
-// });
+
+// esconder logos en celulares
+function myFunction(x) {
+    if (x.matches) { // If media query matches
+        $("#logos").hide();
+    } else {
+        $("#logos").show();
+    }
+}
+
+var x = window.matchMedia("(max-width: 700px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes
 
 
-// $("#view_more").mouseover(function(event) {
-// 	addClass('animate bounce infinite');
-// });

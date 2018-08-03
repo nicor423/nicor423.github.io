@@ -16,15 +16,19 @@
 
 		<!-- my stylesheet -->
 		<link href="css/estilos.css" rel="stylesheet">
+		<link href="css/mobile.css" rel="stylesheet">
+
 
 </head>
-<body class="scrollbar-morpheus-den">
+
+
+<body class="scrollbar-morpheus-den" data-offset="0">
 		<header>
 		<!--Navbar-->
 			<nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="mi_navbar">
 			    <!-- Navbar brand -->
 			    <div id="div_logo" class="navbar-brand">
-				    <a class="navbar-brand" href="#">
+				    <a class="navbar-brand" href="#sec_tope">
 				    	<img src="img/face.svg" height="60px">
 				    	N/R
 				    </a>
@@ -37,16 +41,19 @@
 			    <div class="collapse navbar-collapse" id="basicExampleNav">
 			        <!-- Links -->
 			        <ul class="navbar-nav ml-auto">
-			            <li class="nav-item">
-			                <a class="nav-link" href="#one">Home
+			            <li class="nav-item active">
+			                <a class="nav-link"  href="#sec_tope">Home
 			                    <span class="sr-only">(current)</span>
 			                </a>
 			            </li>
 			            <li class="nav-item">
-			                <a class="nav-link" href="#two" >About</a>
+			                <a class="nav-link"  href="#about">About</a>
 			            </li>
 			            <li class="nav-item">
-			                <a class="nav-link" href="#three">Contact</a>
+			                <a class="nav-link"  href="#two">Work & Experience</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link"  href="#three">Contact</a>
 			            </li>
 			        </ul>
 			        <!-- Links -->
@@ -56,23 +63,31 @@
 			<!--/.Navbar-->
 		</header>
 		<main>
-			<div class="contenedor">
+			<div class="contenedor" id="sec_tope">
 				<section id="one">
-					<div id="contenedor_nombre">
-						<h2 class="nombre">Nicolás Rastellino</h2>
+					<div id="contenedor_nombre" class="jumbotron">
+						<h2 class="h1-responsive  text-center my 5">Nicolás Rastellino</h2>
 						<hr class="white">
-						<h2 class="text-white">Jr. Front-End Developer</h2>
+						<h2 class="h1-responsive text-center my 5">Jr. Front-End Developer</h2>
 						<button class="btn btn-outline-white view_more zoom" id="view_more">View more</button>
 					</div>
-					<img src="img/hi.png" id="hi">
+					<img src="img/hi.svg" id="hi">
 				</section>
 			</div>
 
-			<section id="two" style="position: relative;">
+			<!-- about -->
+			<section id="about">
 				<div class="container-fluid">
 					<div class="row">
 						<div>
-							<img src="img/pointing.svg" alt="pointing" id="pointing">
+							<a href="img/cv_nicolas_rastellino.pdf" target="_blank">
+								<img src="img/pointing.svg" alt="pointing" id="pointing">
+							</a>
+						</div>
+						<div>
+							<a href="img/cv_nicolas_rastellino.pdf" target="_blank">
+								<img src="img/chat2.png" alt="" id="chat">
+							</a>
 						</div>
 						<div>
 							<img src="img/paper2.png" alt="paper" id="paper">
@@ -81,7 +96,29 @@
 				</div>
 			</section>
 
-			<section id="three" class="rotate_bg">
+			<section id="about2" style="background-color: black;">
+				<div id="sec_about2" class="container-fluid">
+					<div class="row" style="padding-top: 100px; margin-left: 200px;">
+						<div class="col-md-4">
+							<img id="img_1" src="img/rugby7.jpg" class="img-thumbnail">
+						</div>
+						<div class="col-md-4">
+							<img id="img_2" src="img/rugby7.jpg" class="img-thumbnail">
+						</div>
+					</div>
+					<p style="padding-top: 60px;">
+
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, doloremque consequuntur beatae, praesentium quaerat iure qui, laudantium delectus totam, neque sunt. Consectetur debitis accusamus, architecto sit porro tempore esse nemo!
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam recusandae ad assumenda nostrum, dolorem quas iusto odio! Recusandae, hic tempore sint laboriosam, fugiat repudiandae quis vel reprehenderit ullam accusamus nobis.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus corporis, vitae doloremque autem voluptatem reiciendis velit in necessitatibus soluta odit, minus, temporibus, similique iste illum ipsam omnis libero laboriosam? Molestias.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus error beatae debitis veritatis, repellat facere facilis expedita officia ducimus tempora ipsam consequatur quod nobis ipsa deserunt tempore, nihil, harum dolorem!
+					</p>
+				</div>
+			</section>
+
+
+			<!-- what i can do? -->
+			<section id="three">
 				<div id="sec_three" class="container">
 					<h1 id="what">What I can do?</h1>
 					<div class="row" id="row1">
@@ -112,10 +149,92 @@
 							</div>
 						</div>
 						<div class="col-md-4">
-							<img src="img/logos.svg" height="200px">
+							<img src="img/logos.svg" height="200px" id="logos">
 						</div>
 					</div>
 				</div>
+			</section>
+
+			<section style="background-color: black;">
+				<div class="container-fluid">
+					<h1 class="text-white" style="text-align: center;">experience</h1>
+					<div class="row">
+						<!-- <div class="col-md-9" style="background-color: red;">
+							<div class="col-md-6" style="background-color: pink; height: 50px;">
+							</div>
+							<div class="col-md-3" style="background-color: blue; height: 50px;">
+							</div>
+						</div> -->
+						<div class="col-md-3">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio tempora culpa modi, rem consequatur odit molestias commodi, sequi repellendus veritatis ullam nesciunt suscipit, ab esse! Similique provident, minima quaerat quos.
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<img src="img/login.png" alt="" class="img-thumbnail" width="200px">
+				<img src="img/menu.png" alt="" class="img-thumbnail" width="200px">
+				<img src="img/menu1.png" alt="" class="img-thumbnail">
+				<!-- <img src="img/menu2.png" alt="" class="img-thumbnail"> -->
+				<!-- <img src="img/menu3.png" alt="" class="img-thumbnail"> -->
+			</section>
+
+
+			<!-- contact -->
+			<section id="four">
+				<h2 class="h1-responsive font-weight-bold text-center my 5">Get in contact</h2>
+				<p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        		matter of hours to help you.</p>
+
+				<div class="container">
+					<div class="row">
+
+					<div class="col-md-6 col-sm-6 col-xs-12">
+            			<div class="form contact-form">
+             				<div id="sendmessage">Tu mensaje ha sido enviado con exito. ¡Gracias!</div>
+              				<div id="errormessage">Error, no se pudo enviar el mensaje.</div>
+              				<form action="contactform/contactform.php" method="post" role="form" class="contactForm">
+                				<div class="form-group">
+                  					<input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" data-rule="minlen:3" data-msg="Por favor ingrese al menos 4 caracteres">
+                  					<div class="validation"></div>
+                				</div>
+                			<div class="form-group">
+                  				<input type="email" class="form-control" name="email" id="email" placeholder="Tu correo electrónico" data-rule="email" data-msg="Por favor introduzca una dirección de correo electrónico válida">
+                  				<div class="validation"></div>
+                			</div>
+                			<div class="form-group">
+		                  		<input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor ingrese al menos 8 caracteres de Asunto">
+		                  		<div class="validation"></div>
+                			</div>
+                			<div class="form-group">
+                  				<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escribe algo para mi" placeholder="Mensaje"></textarea>
+                  				<div class="validation"></div>
+                			</div>
+                			<div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+              				</form>
+            			</div>
+          			</div>
+
+
+
+
+
+
+
+
+
+					</div>
+				</div>
+
+
+<!-- 				<form action="https://formspree.io/your@email.com" method="POST">
+				    <input type="text" name="name">
+				    <input type="email" name="_replyto">
+				    <input type="submit" value="Send">
+				</form> -->
+
 			</section>
 
 		</main>
@@ -128,12 +247,18 @@
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="js/jquery-3.3.1.js"></script>
+
+
 	<!-- Bootstrap tooltips -->
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<!-- Bootstrap core JavaScript -->
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- MDB core JavaScript -->
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/js/mdb.min.js"></script>
+	<!-- SmoothScroll -->
+		<!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script> -->
+	<!-- My js -->
     	<script src="js/scripts.js"></script>
 </body>
 </html>

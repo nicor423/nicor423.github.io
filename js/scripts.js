@@ -10,12 +10,14 @@ $(document).ready(function() {
     element.classList.add("infinite");
 
 
-	    $("#sendmessage").hide();
-	    $("#errormessage").hide();
+    // $('#img_1').click(function(){
+    //     $('#img_1').attr('src', 'img/rugby.jpg');
+    // });
 
 
-	   	//smooth scroll
 
+
+	 //smooth scroll
 		// Select all links with hashes
 		$('a[href*="#"]')
   		// Remove links that don't actually link to anything
@@ -77,9 +79,9 @@ $(document).ready(function() {
 
 });
 
-$("#view_more").click(function(event) {
-	alert("hola");
-});
+// $("#view_more").click(function(event) {
+// 	alert("hola");
+// });
 
 
 // esconder logos en celulares

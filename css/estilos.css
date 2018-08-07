@@ -1,5 +1,6 @@
 body{
 	background-image: url("../img/background_nav.jpg");
+	font-family: comic sans ms;
 }
 /*menu*/
 .navbar{
@@ -114,7 +115,10 @@ body{
 			margin-top: 200px;
 			margin-left: 15%;
 		}
-
+		#fila_rugby{
+			margin-left: 200px;
+			padding-top: 100px;
+		}
 		#img_1{
 			/*transform: rotate(-35deg);*/
 			position: relative;
@@ -143,55 +147,77 @@ body{
 
 	/*about*/
 
-	#three{
-		/*background-image: url(../img/background_nav.jpg) ;*/
-		/*-webkit-transform: scaleY(-1);*/
-	}
-	#sec_three{
-		/*-webkit-transform: scaleY(-1);*/
-		margin-left: 15%;
-	}
-	#what{
-		color: white;
-		text-align: center;
-		font-family: comic sans ms;
-		padding-top: 75px;
-		padding-bottom: 60px;
-		text-decoration: underline;
-		margin-right: 15%;
-	}
+	/*three*/
+
+		#three{
+			/*background-image: url(../img/background_nav.jpg) ;*/
+			/*-webkit-transform: scaleY(-1);*/
+		}
+		#sec_three{
+			/*-webkit-transform: scaleY(-1);*/
+			margin-left: 15%;
+		}
+		#what{
+			color: white;
+			text-align: center;
+			font-family: comic sans ms;
+			padding-top: 75px;
+			padding-bottom: 60px;
+			text-decoration: underline;
+			margin-right: 15%;
+		}
 
 
-	#row1{
-		padding-bottom: 0px;
-		/*background-color: red;*/
-		margin-bottom: 20px;
-		text-align: left;
-		color: white;
-		font-family: comic sans ms;
-	}
-	#row2{
-		/*background-color: pink;*/
-		padding-top: 0px;
-		padding-bottom: 0px;
-		color: white;
-		font-family: comic sans ms;
-	}
-	.vcenter{
-		padding-top: 13%;
-	}
+		#row1{
+			padding-bottom: 0px;
+			/*background-color: red;*/
+			margin-bottom: 20px;
+			text-align: left;
+			color: white;
+			font-family: comic sans ms;
+		}
+		#row2{
+			/*background-color: pink;*/
+			padding-top: 0px;
+			padding-bottom: 0px;
+			color: white;
+			font-family: comic sans ms;
+		}
+		.vcenter{
+			padding-top: 13%;
+		}
+	/*three*/
 
+	/*experience*/
+
+		#carousel1{
+			margin-left: 40px;
+		}
+		.carousel-inner > .item > img {
+	  		/*width:640px;*/
+	  		/*height:400px;*/
+	  		/*vertical-align: center;*/
+		}
+
+		#experience{
+			padding-top: 65px;
+			margin-left: 160px;
+		}
+	/*experience*/
+
+	/*contact*/
+		#contact_header{
+			padding-top: 75px;
+		}
+	/*contact*/
 /*secciones*/
 
 .zoom {
-    padding: 20px;
-
     transition: transform .2s; /* Animation */
-    /*margin: 0 auto;*/
 }
 
 .zoom:hover {
-    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.3);
 }
 
 .scrollbar-morpheus-den::-webkit-scrollbar {

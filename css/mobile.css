@@ -69,7 +69,6 @@
 	}
 
 	#sec_experience{
-		background-color: black;
 		height: 200vh;
 	}
 	#experience{
@@ -77,11 +76,14 @@
 		margin-left: 10px;
 	}
 	#carousel1{
-		margin-left: 2px;
+		margin-left: 10px;
 		width: 95%;
 	}
 	.img_carousel{
 		width: 98%;
+	}
+	#text_experience{
+		margin-left: 20px;
 	}
 	.navbar{
 		background-image: url("../img/background_nav.jpg");

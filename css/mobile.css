@@ -1,24 +1,9 @@
-/*@media handheld, only screen and (min-width: 970px) {
-	#row1{
-		margin-left: 300px;
-		padding-right: 0px;
-
-	}
-	#row2{
-		margin-right: 300px;
-		padding-left: 0px;
-
-	}
-}
-*/
-
 @media handheld, only screen and (max-width: 767px) {
 	#contenedor_nombre{
-		margin: 0 auto;
+		/*margin: 0 auto;*/
+		margin-left: 20%;
 		width: 80%;
-		height: 60%
-		background-color: rgba(67, 222, 201, 1);
-
+		height: 60%;
 	}
 	.view_more{
 		display: none;
@@ -58,18 +43,22 @@
 	}
 
 	#what{
-		padding-top: 20px;
+		padding-top: 60px;
 	}
 	#pencil{
 		margin-left: 30%;
 		padding:0%;
+	}
+	.vcenter{
+		padding-top: 10px;
 	}
 	#three{
 		height: 185vh;
 	}
 
 	#sec_experience{
-		height: 200vh;
+		background-color: black;
+		height: 330vh;
 	}
 	#experience{
 		padding-top: 10px;
@@ -81,10 +70,23 @@
 	}
 	.img_carousel{
 		width: 98%;
+		margin-left: 10px;
+	}
+	.img_carousel2{
+		margin-left: 10px;
+		width: 90%;
 	}
 	#text_experience{
 		margin-left: 20px;
 	}
+	#text_jap{
+		margin-left: 10px;
+	}
+	#img_jap{
+		margin-left: 30px;
+		margin-top: 40px;
+	}
+
 	.navbar{
 		background-image: url("../img/background_nav.jpg");
 	}
@@ -94,4 +96,8 @@
 	#contenedor_nombre{
 		height: 40%;
 	}
+	#contact{
+		height: 120vh;
+	}
+
 }

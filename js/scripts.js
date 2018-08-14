@@ -4,10 +4,30 @@ $(document).ready(function() {
 	    element.classList.add("animated");
 	    element.classList.add("bounceIn");
 
-    var element = document.getElementById("chat");
-    element.classList.add("animated");
-    element.classList.add("bounce");
-    element.classList.add("infinite");
+    var elemento = document.getElementById("chat");
+    elemento.classList.add("animated");
+    elemento.classList.add("bounce");
+    elemento.classList.add("infinite");
+
+    $("#formulario").validate();
+
+    $("#email").click(function() {
+      $(this).addClass('required');
+    });
+
+    $("#subject").click(function() {
+      $(this).addClass('required');
+    });
+
+    $("#message").click(function() {
+      $(this).addClass('required');
+    });
+
+    $("#btn_send").click(function() {
+      $("#email").addClass('required');
+      $("#subject").addClass('required');
+      $("#message").addClass('required');
+    });
 
 	  //smooth scroll
 		// Select all links with hashes
@@ -17,11 +37,7 @@ $(document).ready(function() {
   		.not('[href="#0"]')
   		.click(function(event) {
     	// On-page links
-    	if (
-    			location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-    			&&
-    			location.hostname == this.hostname
-			) {
+    	if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       // Figure out element to scroll to
   		var target = $(this.hash);
   		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -41,7 +57,7 @@ $(document).ready(function() {
           } else {
             // $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
             $target.focus(); // Set focus again
-        };
+        }
     });
     }
   }
@@ -80,8 +96,8 @@ function myFunction(x) {
     }
 }
 
-var x = window.matchMedia("(max-width: 700px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes
+var x = window.matchMedia("(max-width: 700px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes
 
 

@@ -15,7 +15,7 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.4/css/mdb.min.css" rel="stylesheet">
 
 		<!-- my stylesheet -->
-		<link href="css/estilos.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
 		<link href="css/mobile.css" rel="stylesheet">
 
 
@@ -41,7 +41,7 @@
 			    <div class="collapse navbar-collapse" id="basicExampleNav">
 			        <!-- Links -->
 			        <ul class="navbar-nav ml-auto">
-			            <li class="nav-item active">
+			            <li class="nav-item">
 			                <a class="nav-link"  href="#sec_tope">Home
 			                    <span class="sr-only">(current)</span>
 			                </a>
@@ -50,7 +50,10 @@
 			                <a class="nav-link"  href="#about">About</a>
 			            </li>
 			            <li class="nav-item">
-			                <a class="nav-link"  href="#three">Work & Experience</a>
+			                <a class="nav-link"  href="#three">Work</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link"  href="#sec_experience">Experience</a>
 			            </li>
 			            <li class="nav-item">
 			                <a class="nav-link"  href="#contact">Contact</a>
@@ -91,7 +94,7 @@
 							</a>
 						</div>
 						<div>
-							<img src="img/paper2.png" alt="paper" id="paper">
+							<img src="img/paper3.png" alt="paper" id="paper">
 						</div>
 					</div>
 				</div>
@@ -110,7 +113,7 @@
 					<div class="container">
 
 					<p style="padding-top: 60px;" class="text-white">
-						Rugby offers more than the opportunity to practice vigorous exercise, it´s a sport with values that develops the player in a social and moral context. The core values of the Rugby are:
+						Rugby offers more than the opportunity to practice vigorous exercise, it´s a sport with values that develops the player in a social and moral context. The most important values of Rugby are:
 					</p>
 					<ul style="list-style-type: none;" class="text-white">
 						<li>
@@ -181,8 +184,8 @@
 							        <li data-target="#carousel1" data-slide-to="0" style="background-color: grey;" class="active"></li>
 							        <li data-target="#carousel1" data-slide-to="1" style="background-color: grey;"></li>
 							        <li data-target="#carousel1" data-slide-to="2" style="background-color: grey;"></li>
-							        <li data-target="#carousel1" data-slide-to="2" style="background-color: grey;"></li>
-							        <li data-target="#carousel1" data-slide-to="2" style="background-color: grey;"></li>
+							        <li data-target="#carousel1" data-slide-to="3" style="background-color: grey;"></li>
+							        <li data-target="#carousel1" data-slide-to="4" style="background-color: grey;"></li>
 							    </ol>
 							    <!--/.Indicators-->
 							    <!--Slides-->
@@ -204,14 +207,24 @@
 							        <!--/3-->
 							        <!--4-->
 							        <div class="carousel-item">
-							            <img class="img_carousel" src="img/menu3.png" alt="Third slide">
+							            <img class="img_carousel" src="img/menu3.png" alt="">
 							        </div>
 							        <!--/4-->
-							        <!--4-->
+							        <!--5-->
 							        <div class="carousel-item">
-							            <img class="img_carousel" src="img/RegistroActividad.png" alt="Third slide">
+							            <img class="img_carousel2" src="img/RegistroActividad.png" alt="">
 							        </div>
-							        <!--/4-->
+							        <!--/5-->
+							        <!--6-->
+							        <div class="carousel-item">
+							            <img class="img_carousel2" src="img/RegistroPago2.png" alt="">
+							        </div>
+							        <!--/6-->
+							        <!--7-->
+							        <div class="carousel-item">
+							            <img class="img_carousel" src="img/RegistroSocio.png" alt="">
+							        </div>
+							        <!--/7-->
 							    </div>
 							    <!--/.Slides-->
 							    <!--Controls-->
@@ -243,9 +256,20 @@
 
 							</div>
 						</div>
-
-
 					</div>
+
+					<div class="row">
+						<div class="col-md-5 col-sm-12 text-white" id="text_jap">
+							<p>
+								JaP was a great experience, I´ve learned more than just web development. I´ve learned how to work in groups, present myself, how to see my strenghts and weakness and ofcourse the skills to create a proper web page. Basically I´ve been teached to get a job.
+							</p>
+						</div>
+						<div class="col-md-6 col-sm-12 text-white">
+							<img src="img/jap.jpg" alt="" class="img-thumbnail zoom" width="500px" id="img_jap">
+						</div>
+					</div>
+
+
 				</div>
 			</section>
 
@@ -261,23 +285,23 @@
 				<div class="container">
 					<div class="row">
 
-					<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="col-xs-12 col-sm-6 col-md-6">
             			<div class="form contact-form">
-              				<form action="https://formspree.io/nicora423@gmail.com" method="POST">
+              				<form action="https://formspree.io/nicora423@gmail.com" method="POST" id="formulario">
                 				<div class="form-group zoom">
                   					<input type="text" name="name" class="form-control" id="name" placeholder="Name" autocomplete="off">
                 				</div>
                 			<div class="form-group zoom">
-                  				<input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg-required="Enter valid email adress" required="required" autocomplete="off">
+                  				<input type="email" class="form-control" name="email" id="email" placeholder="E-mail" data-rule="email" data-msg-required="Enter valid email adress" autocomplete="off">
                 			</div>
                 			<div class="form-group zoom">
-		                  		<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-msg-required="Please enter a subject" required="required" autocomplete="off">
+		                  		<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-msg-required="Please enter a subject" autocomplete="off">
                 			</div>
                 			<div class="form-group zoom">
-                  				<textarea class="form-control" name="message" rows="5" data-msg-required="Please write a message" placeholder="Message" required="required" autocomplete="off"></textarea>
+                  				<textarea class="form-control" name="message" rows="5"  id="message" data-msg-required="Please write a message" placeholder="Message" autocomplete="off"></textarea>
                 			</div>
                 			<div class="text-center">
-								<button class="btn btn-outline-white zoom view_more" type="submit">Send</button>
+								<input class="btn btn-outline-white zoom send" type="submit" value="Send" id="btn_send">
 							</div>
               				</form>
             			</div>
@@ -286,14 +310,14 @@
           			<div class="col-md-6 col-sm-6 col-xs-12">
 						<div class="row" style="margin-top: 20px;"	>
 							<div class="col-12 text-center">
-								<a href="#" target="_blank" style="color: black;">
+								<a href="https://github.com/nicor423" target="_blank" style="color: black;">
 									<i class="fa fa-github-square fa-5x zoom" aria-hidden="true"></i>
 								</a>
 							</div>
 						</div>
 						<div class="row" style="margin-top: 20px;">
 							<div class="col-12 text-center">
-								<a href="#" target="_blank" style="color: black;">
+								<a href="" target="_blank" style="color: black;">
 									<i class="fa fa-linkedin-square fa-5x zoom" aria-hidden="true"></i>
 								</a>
 							</div>
@@ -320,9 +344,8 @@
 
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="js/jquery-3.3.1.js"></script>
-
+		<script src="js/jquery.validate.min.js"></script>
 
 	<!-- Bootstrap tooltips -->
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

@@ -43,7 +43,6 @@ body{
 	/*landing*/
 			.contenedor{
 				position: static;
-				background-image: url(../img/background_page.jpg);
 				height: 100vh;
 				padding-top: 280px;
 				width: 100%;
@@ -89,8 +88,8 @@ body{
 			position: relative;
 		}
 		#paper{
-			height: 80%
-			padding-top: 0px;
+			height: 90%;
+			padding-top: 20px;
 			margin-top: 5%;
 			float: right;
 		}
@@ -169,9 +168,12 @@ body{
 	/*three*/
 
 	/*experience*/
-
+		#sec_experience{
+			height: 150vh;
+		}
 		#carousel1{
 			margin-left: 40px;
+			height: 400px;
 		}
 		#experience{
 			padding-top: 65px;
@@ -182,12 +184,44 @@ body{
 			 margin-right: 20px;
 			 margin-top: 35px;
 		}
+		.img_carousel{
+			margin-left: 80px;
+		}
+		.img_carousel2{
+			margin-left: 80px;
+			margin-top: 90px;
+		}
+		#img_jap{
+			margin-left: 60px;
+			margin-top: 40px;
+		}
+		#text_jap{
+			margin-top: 90px;
+		 	margin-left: 40px;
+		}
 	/*experience*/
 
 	/*contact*/
 		#contact_header{
 			padding-top: 75px;
 		}
+		.required {
+ 			border-color: #800000;
+  			border-width: 3px;
+		}
+		.required:invalid {
+		  border-color: #C00000;
+		}
+		.required:valid {
+		  border-color: #33FF00  ;
+		}
+
+		.send{
+			border-radius: 20px;
+			margin-top: 23px;
+			font-family: comic sans ms;
+		}
+
 	/*contact*/
 /*secciones*/
 
@@ -210,4 +244,8 @@ body{
   background-image: -webkit-gradient(linear, left bottom, left top, from(#30cfd0), to(#330867));
   background-image: -webkit-linear-gradient(bottom, #30cfd0 0%, #330867 100%);
   background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.error{
+	color: white;
 }
